@@ -1,4 +1,5 @@
 import requests
+import unicodedata
 
 # Note : pour que ce test fonctionne, l'API doit être lancée. 
 # En CI, on la lancera temporairement.

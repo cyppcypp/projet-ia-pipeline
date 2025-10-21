@@ -23,7 +23,6 @@ jobs:
         pip install pytest black requests flask flask_cors
 
     - name: Check code style with Black
-      run: black --check .
-
+      run: python -m black --check . 
     - name: Run tests with pytest
-      run: pytest
+      run: python -m pytest 
