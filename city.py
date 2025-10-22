@@ -3,20 +3,32 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import unicodedata
 
+
 # Fonction pour supprimer les accents d'un texte
 def remove_accents(input_str):
     if input_str is None:
         return None
-    nfkd_form = unicodedata.normalize('NFKD', input_str)
-    return ''.join([c for c in nfkd_form if not unicodedata.combining(c)])
+    nfkd_form = unicodedata.normalize("NFKD", input_str)
+    return "".join([c for c in nfkd_form if not unicodedata.combining(c)])
+
 
 url = "https://www.donneesmondiales.com/capitales.php"
 
 # Liste des villes à récupérer (sans accents pour comparaison)
 villes_cible = [
-    "Paris", "Rome", "Stockholm", "Oslo",
-    "Ottawa", "Helsinki", "Berlin",
-    "Tokyo", "Londres", "Pekin", "Santiago", "Canberra", "Tirana"
+    "Paris",
+    "Rome",
+    "Stockholm",
+    "Oslo",
+    "Ottawa",
+    "Helsinki",
+    "Berlin",
+    "Tokyo",
+    "Londres",
+    "Pekin",
+    "Santiago",
+    "Canberra",
+    "Tirana",
 ]
 
 # Effectuer une requête GET
@@ -48,16 +60,23 @@ for table in tables:
             pays = cols[0]
             capitale = cols[1]
             population_ville = cols[2]
-            population_urbaine = cols[3] if len(cols) > 3 and cols[3] else population_ville
-            all_data.append({
-                "Pays": pays,
-                "Capitale": capitale,
-                "Population ville": population_ville,
-                "Population et périphérie": population_urbaine,
-            })
+            population_urbaine = (
+                cols[3] if len(cols) > 3 and cols[3] else population_ville
+            )
+            all_data.append(
+                {
+                    "Pays": pays,
+                    "Capitale": capitale,
+                    "Population ville": population_ville,
+                    "Population et périphérie": population_urbaine,
+                }
+            )
 
 # Créer un DataFrame avec toutes les données
-df = pd.DataFrame(all_data, columns=["Pays", "Capitale", "Population ville", "Population et périphérie"])
+df = pd.DataFrame(
+    all_data,
+    columns=["Pays", "Capitale", "Population ville", "Population et périphérie"],
+)
 
 # Sauvegarder toutes les données dans un seul fichier CSV
 file_name = "Population_by_city.csv"

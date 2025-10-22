@@ -5,17 +5,16 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+
 # Connexion à la base de données MySQL
 def get_db_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="scraping_tripadvisor"
+        host="localhost", user="root", password="", database="scraping_tripadvisor"
     )
 
+
 # Route pour récupérer tous les restaurants
-@app.route('/api/restaurants', methods=['GET'])
+@app.route("/api/restaurants", methods=["GET"])
 def get_restaurants():
     try:
         conn = get_db_connection()
@@ -28,8 +27,9 @@ def get_restaurants():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
 # Route pour récupérer les KPIs des restaurants
-@app.route('/api/kpis', methods=['GET'])
+@app.route("/api/kpis", methods=["GET"])
 def get_kpis():
     try:
         conn = get_db_connection()
@@ -55,8 +55,9 @@ def get_kpis():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
 # Route pour le graphique à bulles
-@app.route('/api/bubble-chart', methods=['GET'])
+@app.route("/api/bubble-chart", methods=["GET"])
 def get_bubble_chart_data():
     try:
         conn = get_db_connection()
@@ -80,8 +81,9 @@ def get_bubble_chart_data():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
 # Route pour le graphique à secteurs
-@app.route('/api/pie-chart', methods=['GET'])
+@app.route("/api/pie-chart", methods=["GET"])
 def get_pie_chart_data():
     try:
         conn = get_db_connection()
@@ -103,8 +105,9 @@ def get_pie_chart_data():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
 # Route pour le graphique en courbes
-@app.route('/api/line-chart', methods=['GET'])
+@app.route("/api/line-chart", methods=["GET"])
 def get_line_chart_data():
     try:
         conn = get_db_connection()
@@ -127,5 +130,6 @@ def get_line_chart_data():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(debug=True)

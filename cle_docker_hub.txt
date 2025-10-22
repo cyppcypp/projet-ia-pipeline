@@ -1,0 +1,5 @@
+run:
+docker login -u cypridu94100
+
+psw:
+dckr_pat_cqnSjbzsmmChbrWgCsWI9zfFgLM
