@@ -51,8 +51,9 @@ jobs:
         with:
           context: . # Cherche le Dockerfile dans le répertoire courant
           push: true # Pousse l'image vers le registre
-          tags: ${{ secrets.DOCKER_USERNAME }}/mon-api-flask:latest # Remplacer 'mon-api-flask' par votre nom de dépôt
+          tags: ${{ secrets.DOCKER_USERNAME }}/mon-api-flask:latest 
           cache-from: type=gha # Utilise le cache pour accélérer la construction
+          cache-to: type=gha,mode=max
           
       - name: Annonce de l'Artefact (Fin de la Phase CD)
         run: echo "L'Image Docker a été packagée et stockée sur Docker Hub (C13)."
