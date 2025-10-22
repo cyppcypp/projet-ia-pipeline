@@ -90,7 +90,7 @@ def fetch_restaurants(location_id):
 
 
 # Charger les données de population des villes depuis le CSV
-city_data = pd.read_csv("Population_by_city.csv", encoding="utf-8")
+city_data = pd.read_csv("data/Population_by_city.csv", encoding="utf-8")
 
 # Créer un dictionnaire pour accéder rapidement aux données des villes
 city_pop_info = {
@@ -178,7 +178,7 @@ try:
     df = pd.DataFrame(restaurants, columns=columns)
 
     # Sauvegarde dans un fichier CSV
-    df.to_csv("restaurants_export.csv", index=False, encoding="utf-8")
+    df.to_csv("data/restaurants_export.csv", index=False, encoding="utf-8")
     print("Export des données vers restaurants_export.csv terminé !")
 except mysql.connector.Error as err:
     print(f"Erreur MySQL lors de l'exportation des données : {err}")

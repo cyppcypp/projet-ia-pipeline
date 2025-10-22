@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import unicodedata
+import os
 
 
 # Fonction pour supprimer les accents d'un texte
@@ -78,7 +79,11 @@ df = pd.DataFrame(
     columns=["Pays", "Capitale", "Population ville", "Population et périphérie"],
 )
 
+
+output_dir = "data"
+os.makedirs(output_dir, exist_ok=True)
+
 # Sauvegarder toutes les données dans un seul fichier CSV
-file_name = "Population_by_city.csv"
+file_name = os.path.join(output_dir, "Population_by_city.csv")
 df.to_csv(file_name, index=False, encoding="utf-8")
 print(f"Toutes les données filtrées ont été sauvegardées dans '{file_name}'")
