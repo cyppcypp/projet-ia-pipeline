@@ -189,33 +189,33 @@ Sistina 52,5,627,Rome,Italie,2.755.309,460.000
 The Loft,5,1290,Rome,Italie,2.755.309,460.000
 I Goliardi Roma,5,442,Rome,Italie,2.759.629,460.000
 Bull Steak,5,1850,Rome,Italie,2.759.629,460.000
-Sundari’s Kitchen,5,124,Ottawa,Canada,1.071.868,1.476.756
-Aperitivo,5,523,Ottawa,Canada,1.071.868,1.476.756
+Sundari’s Kitchen,5,172,Ottawa,Canada,1.153.843,1.476.756
+Aperitivo,5,540,Ottawa,Canada,1.153.843,1.476.756
 Cocotte Bistro,5,267,Ottawa,Canada,1.153.843,1.476.756
-1 Elgin,5,768,Ottawa,Canada,1.071.868,1.476.756
-Honest Indian Restaurant,5,108,Ottawa,Canada,1.071.868,1.476.756
-Hunter's Public House Restaurant,5,392,Ottawa,Canada,1.071.868,1.476.756
-La Bottega Nicastro,5,559,Ottawa,Canada,1.071.868,1.476.756
-Cumberland Pizza,5,388,Ottawa,Canada,1.071.868,1.476.756
+1 Elgin,4,863,Ottawa,Canada,1.153.843,1.476.756
+Honest Indian Restaurant,5,107,Ottawa,Canada,1.153.843,1.476.756
+Hunter's Public House Restaurant,5,400,Ottawa,Canada,1.153.843,1.476.756
+La Bottega Nicastro,5,567,Ottawa,Canada,1.153.843,1.476.756
+Cumberland Pizza,5,412,Ottawa,Canada,1.153.843,1.476.756
 Absinthe,5,987,Ottawa,Canada,1.153.843,1.476.756
 Gezellig,5,1057,Ottawa,Canada,1.153.843,1.476.756
-Sansotei Ramen,5,228,Ottawa,Canada,1.071.868,1.476.756
+Sansotei Ramen,5,233,Ottawa,Canada,1.153.843,1.476.756
 Beckta Dining & Wine,5,1663,Ottawa,Canada,1.153.843,1.476.756
-The Green Door,5,442,Ottawa,Canada,1.071.868,1.476.756
+The Green Door,4,442,Ottawa,Canada,1.153.843,1.476.756
 Play Food & Wine,5,1893,Ottawa,Canada,1.153.843,1.476.756
-Aroma Meze,5,850,Ottawa,Canada,1.071.868,1.476.756
+Aroma Meze,5,858,Ottawa,Canada,1.153.843,1.476.756
 NeXT,5,943,Ottawa,Canada,1.153.843,1.476.756
 Mahal Tanjore (Previously Thanjai Ottawa) Restaurant,5,169,Ottawa,Canada,1.071.868,1.476.756
-Pelican Seafood Market and Grill,5,711,Ottawa,Canada,1.071.868,1.476.756
-Chez Lucien,5,496,Ottawa,Canada,1.071.868,1.476.756
-Town,5,460,Ottawa,Canada,1.071.868,1.476.756
-The Brig Pub,5,305,Ottawa,Canada,1.071.868,1.476.756
+Pelican Seafood Market and Grill,4,727,Ottawa,Canada,1.153.843,1.476.756
+Chez Lucien,4,503,Ottawa,Canada,1.153.843,1.476.756
+Town,4,464,Ottawa,Canada,1.153.843,1.476.756
+The Brig Pub,5,311,Ottawa,Canada,1.153.843,1.476.756
 Coconut Lagoon,4,592,Ottawa,Canada,1.153.843,1.476.756
-The Whalesbone Oyster House,5,474,Ottawa,Canada,1.071.868,1.476.756
+The Whalesbone Oyster House,4,477,Ottawa,Canada,1.153.843,1.476.756
 Riviera,4,473,Ottawa,Canada,1.153.843,1.476.756
-Petit Bill's Bistro,5,373,Ottawa,Canada,1.071.868,1.476.756
-The Keg Steakhouse + Bar - Ottawa Market,5,763,Ottawa,Canada,1.071.868,1.476.756
-Fatboys Southern Smokehouse,4,534,Ottawa,Canada,1.071.868,1.476.756
+Petit Bill's Bistro,4,380,Ottawa,Canada,1.153.843,1.476.756
+The Keg Steakhouse + Bar - Ottawa Market,4,768,Ottawa,Canada,1.153.843,1.476.756
+Fatboys Southern Smokehouse,4,543,Ottawa,Canada,1.153.843,1.476.756
 Shinka Sushi Bar,5,317,Ottawa,Canada,1.153.843,1.476.756
 Sidedoor Contemporary Kitchen & Bar,4,566,Ottawa,Canada,1.153.843,1.476.756
 JOEY Rideau,5,404,Ottawa,Canada,1.071.868,1.476.756
@@ -279,7 +279,7 @@ MO-MO-PARADISE Kabukicho,5,457,Tokyo,Japon,13.515.271,37.732.000
 Mugi no Oto,5,165,Tokyo,Japon,13.515.271,37.732.000
 Taishu Sukiyaki Hokuto Ginza Corridor,5,107,Tokyo,Japon,13.515.271,37.732.000
 Super Bacana Ginza,5,114,Tokyo,Japon,13.515.271,37.732.000
-Sherlock Holmes,4,3035,Londres,Royaume-Uni,8.825.001,11.262.000
+Sherlock Holmes,4,3120,Londres,Royaume-Uni,8.825.001,11.262.000
 Museum Tavern,4,1070,Londres,Royaume-Uni,8.825.001,11.262.000
 Betto Tapas Restaurant & Cocktail Bar,5,481,Londres,Royaume-Uni,8.825.001,11.262.000
 The Park Room,5,1897,Londres,Royaume-Uni,8.825.001,11.262.000
@@ -508,3 +508,9 @@ The Prince Albert,4,39,Londres,Royaume-Uni,8.825.001,11.262.000
 The Warwick Castle,4,256,Londres,Royaume-Uni,8.825.001,11.262.000
 Eastern Eye Balti House,5,1574,Londres,Royaume-Uni,8.825.001,11.262.000
 Rasoi Ghar,5,544,Londres,Royaume-Uni,8.825.001,11.262.000
+Mahal Tanjore Prev. Thanjai Restaurant,5,184,Ottawa,Canada,1.153.843,1.476.756
+Elgin Street Diner,4,911,Ottawa,Canada,1.153.843,1.476.756
+Hai Coffee Sushi & Asian Food,4,45,Berlin,Allemagne,3.755.251,4.890.363
+Cowei,4,346,Berlin,Allemagne,3.755.251,4.890.363
+Paxtons Head,4,485,Londres,Royaume-Uni,8.825.001,11.262.000
+Greencoat Boy,4,358,Londres,Royaume-Uni,8.825.001,11.262.000
