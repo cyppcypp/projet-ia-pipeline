@@ -10,8 +10,8 @@ RUN mkdir data
 COPY affichage/app.py . 
 
 # Copier les données DANS le sous-dossier 'data'
-COPY restaurants_export.csv data/
-COPY Population_by_city.csv data/
+COPY  data/restaurants_export.csv
+COPY  data/Population_by_city.csv
 
 # Copier les autres scripts si nécessaire (ils sont à la racine)
 COPY scraper.py .
@@ -20,8 +20,7 @@ COPY city.py .
 # ---- Fin de la Correction pour les CSV ----
 
 # Installer les dépendances
-RUN pip install flask flask_cors pandas pymysql # (Ajoutez pymysql si nécessaire pour la BDD)
-
+RUN pip install flask flask_cors pandas pymysql pymysql 
 # Exposer le port par défaut de Flask
 EXPOSE 5000
 
