@@ -10,7 +10,7 @@ RUN mkdir data
 COPY affichage/app.py . 
 
 # Copier les données DANS le sous-dossier 'data'
-OPY data/restaurants_export.csv data/
+COPY data/restaurants_export.csv data/
 COPY data/Population_by_city.csv data/
 
 # Copier les autres scripts si nécessaire (ils sont à la racine)
