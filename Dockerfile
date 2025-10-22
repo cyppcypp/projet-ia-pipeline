@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Copier les fichiers du projet (app.py et les données nécessaires)
-COPY app.py .
+COPY affichage/app.py .
 COPY restaurants_export.csv . # Le jeu de données final
 COPY Population_by_city.csv .
 
